@@ -3,9 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KingdeeWebAPI", "KingdeeWebAPI\KingdeeWebAPI.vcxproj", "{86464E14-59EB-4BAB-A741-962FAECC4B08}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KingdeeWebAPIdotNet", "KingdeeWebAPIdotNet\KingdeeWebAPIdotNet.csproj", "{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tester", "Tester\Tester.vcxproj", "{1F468955-7F92-4DBD-9281-32FF76F7812A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E} = {01BC2927-2FAA-4CE0-8002-30473F46AC1E}
+		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3} = {D70EEE31-E73C-4060-A3CD-A326A8DADAF3}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "KingdeeWebAPI", "KingdeeWebAPI\KingdeeWebAPI.vcxproj", "{01BC2927-2FAA-4CE0-8002-30473F46AC1E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3} = {D70EEE31-E73C-4060-A3CD-A326A8DADAF3}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,16 +26,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Debug|x64.ActiveCfg = Debug|x64
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Debug|x64.Build.0 = Debug|x64
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Debug|x86.ActiveCfg = Debug|Win32
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Debug|x86.Build.0 = Debug|Win32
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Release|Any CPU.ActiveCfg = Release|Win32
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Release|x64.ActiveCfg = Release|x64
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Release|x64.Build.0 = Release|x64
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Release|x86.ActiveCfg = Release|Win32
-		{86464E14-59EB-4BAB-A741-962FAECC4B08}.Release|x86.Build.0 = Release|Win32
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -39,6 +38,26 @@ Global
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Release|x64.Build.0 = Release|Any CPU
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Release|x86.ActiveCfg = Release|Any CPU
 		{D70EEE31-E73C-4060-A3CD-A326A8DADAF3}.Release|x86.Build.0 = Release|Any CPU
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Debug|x64.ActiveCfg = Debug|x64
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Debug|x64.Build.0 = Debug|x64
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Debug|x86.ActiveCfg = Debug|Win32
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Debug|x86.Build.0 = Debug|Win32
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Release|Any CPU.ActiveCfg = Release|Win32
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Release|x64.ActiveCfg = Release|x64
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Release|x64.Build.0 = Release|x64
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Release|x86.ActiveCfg = Release|Win32
+		{1F468955-7F92-4DBD-9281-32FF76F7812A}.Release|x86.Build.0 = Release|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Debug|x64.ActiveCfg = Debug|x64
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Debug|x64.Build.0 = Debug|x64
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Debug|x86.Build.0 = Debug|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Release|x64.ActiveCfg = Release|x64
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Release|x64.Build.0 = Release|x64
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Release|x86.ActiveCfg = Release|Win32
+		{01BC2927-2FAA-4CE0-8002-30473F46AC1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -8,5 +8,9 @@ namespace KingdeeWebAPIdotNet
 {
     public class KingdeeWebAPI
     {
+        public void Test()
+        {
+            Console.WriteLine("Print from .Net library!");
+        }
     }
 }
