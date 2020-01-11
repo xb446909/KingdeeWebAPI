@@ -1,0 +1,40 @@
+//登陆
+//url:登陆地址 (http://fin.puruiit.cn:58888/K3Cloud/)
+//dbid:数据中心ID (5def4fed400b95)
+//user:用户名 (倚和测试)
+//pwd:密码 (123456)
+//result:返回的Json数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+void __stdcall Login(const char* url, const char* dbid, const char* user, const char* pwd, char* result);
+
+//下线
+void __stdcall Logout();
+
+//保存
+//formid:表格ID (物料:BD_MATERIAL, 采购入库单:STK_InStock, 采购退料单:PUR_MRB, 销售出库单:SAL_OUTSTOCK, SAL_RETURNSTOCK)
+//data:传入的Json格式数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+//result:返回的Json数据，如为空，则是没有登陆
+void __stdcall Save(char* formid, char* data, char* result);
+
+//提交
+//formid:表格ID (物料:BD_MATERIAL, 采购入库单:STK_InStock, 采购退料单:PUR_MRB, 销售出库单:SAL_OUTSTOCK, SAL_RETURNSTOCK)
+//data:传入的Json格式数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+//result:返回的Json数据，如为空，则是没有登陆
+void __stdcall Submit(char* formid, char* data, char* result);
+
+//审核
+//formid:表格ID (物料:BD_MATERIAL, 采购入库单:STK_InStock, 采购退料单:PUR_MRB, 销售出库单:SAL_OUTSTOCK, SAL_RETURNSTOCK)
+//data:传入的Json格式数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+//result:返回的Json数据，如为空，则是没有登陆
+void __stdcall Audit(char* formid, char* data, char* result);
+
+//反审核
+//formid:表格ID (物料:BD_MATERIAL, 采购入库单:STK_InStock, 采购退料单:PUR_MRB, 销售出库单:SAL_OUTSTOCK, SAL_RETURNSTOCK)
+//data:传入的Json格式数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+//result:返回的Json数据，如为空，则是没有登陆
+void __stdcall UnAudit(char* formid, char* data, char* result);
+
+//删除
+//formid:表格ID (物料:BD_MATERIAL, 采购入库单:STK_InStock, 采购退料单:PUR_MRB, 销售出库单:SAL_OUTSTOCK, SAL_RETURNSTOCK)
+//data:传入的Json格式数据(详细格式见<金蝶云标准WEB API接口文档.docx>)
+//result:返回的Json数据，如为空，则是没有登陆
+void __stdcall Delete(char* formid, char* data, char* result);
