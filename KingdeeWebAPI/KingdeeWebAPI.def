@@ -1,4 +1,10 @@
 LIBRARY
 EXPORTS
 
-Test
+Login
+Logout
+Save
+Submit
+Audit
+UnAudit
+Delete
