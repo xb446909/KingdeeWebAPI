@@ -19,6 +19,12 @@ void __stdcall Test()
 	kingdee->Test();
 }
 
+void __stdcall SetMode(int nMode)
+{
+	KingdeeWebAPIdotNet::KingdeeWebAPI^ kingdee = gcnew KingdeeWebAPIdotNet::KingdeeWebAPI();
+	kingdee->SetMode(nMode);
+}
+
 void __stdcall Login(const char* url, const char* dbid, const char* user, const char* pwd, char* result)
 {
 	KingdeeWebAPIdotNet::KingdeeWebAPI^ kingdee = gcnew KingdeeWebAPIdotNet::KingdeeWebAPI();

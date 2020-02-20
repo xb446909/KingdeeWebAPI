@@ -1,6 +1,7 @@
 LIBRARY
 EXPORTS
 
+SetMode
 Login
 Logout
 Save

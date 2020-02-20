@@ -23,6 +23,11 @@ namespace KingdeeWebAPIdotNet
             client.Logout();
         }
 
+        public void SetMode(int nMode)
+        {
+            Singleton.Instance.SetMode(nMode);
+        }
+
         public string Login(string url, string dbid, string user, string pwd)
         {
             return Singleton.Instance.Login(url, dbid, user, pwd);
@@ -58,30 +63,6 @@ namespace KingdeeWebAPIdotNet
             return Singleton.Instance.Delete(formid, data);
         }
 
-        private string JsonToxml(string s, string r = "root")
-        {
-            var doc = JsonConvert.DeserializeXmlNode(s, r);
-
-            using (var stream = new MemoryStream())
-            {
-                var writer = new XmlTextWriter(stream, null) { Formatting = System.Xml.Formatting.Indented };
-                doc.Save(writer);
-
-                using (var sr = new StreamReader(stream, Encoding.UTF8))
-                {
-                    stream.Position = 0;
-                    return sr.ReadToEnd();
-                }
-            }
-        }
-
-        private string XmlTojson(string s, string r = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>")
-        {
-
-            s = s.Replace(r, "");
-            var doc = new XmlDocument();
-            doc.LoadXml(s);
-            return JsonConvert.SerializeXmlNode(doc, Newtonsoft.Json.Formatting.None, true);
-        }
+        
     }
 }
